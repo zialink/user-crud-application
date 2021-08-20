@@ -1,0 +1,18 @@
+@import "../../colors";
+
+.user-info-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.username {
+    h3 {
+        align-self: center;
+    }
+}
+
+.user-info-wrapper:nth-child(even) {
+    background-color: $second-color;
+}

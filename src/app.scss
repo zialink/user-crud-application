@@ -1,0 +1,21 @@
+@import "./colors";
+
+.app-wrapper {
+    background-color: "#00000008";
+    height: "100vh";
+}
+
+.nav-wrapper {
+    display: flex;
+    padding: 30px;
+    background-color: $fifth-color;
+    text-transform: uppercase;
+    color: $seventh-color
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
