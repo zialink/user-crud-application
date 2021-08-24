@@ -15,7 +15,17 @@
       align-self: center;
 }
 
-.user-info-wrapper:nth-child(even) {
+.user-info-wrapper:nth-child(odd) {
   background-color: #a1c69a;
+}
+
+.user-info-container {
+  margin-bottom: 40px;
+}
+
+.pagination {
+  position: fixed;
+  bottom: 0%;
+  left: 45%;
 }
 /*# sourceMappingURL=user.css.map */

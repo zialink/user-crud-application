@@ -1,5 +1,5 @@
-import React, { gql, useEffect, useState } from "react";
-import { useQuery, useMutation } from "@apollo/client";
+import React, { useEffect, useState } from "react";
+import { useQuery, useMutation, gql } from "@apollo/client";
 
 import { QUERY_USER, UPDATE_USER, CREATE_USER } from "../../util/graphql";
 
@@ -20,8 +20,8 @@ export default function CreateEditUser({ currentId, setCurrentId }) {
   useEffect(() => {
     if (user) {
       setPostData({
-        firstName: user.user.firstName,
-        lastName: user.user.lastName,
+        firstName: user?.user.firstName,
+        lastName: user?.user.lastName,
       });
     }
   }, [user]);

@@ -13,6 +13,17 @@
     }
 }
 
-.user-info-wrapper:nth-child(even) {
+.user-info-wrapper:nth-child(odd) {
     background-color: $second-color;
+}
+
+.user-info-container {
+    margin-bottom: 40px;
+}
+
+.pagination {
+    position: fixed;
+    bottom: 0%;
+    left: 45%;
+
 }

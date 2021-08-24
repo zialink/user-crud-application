@@ -1,7 +1,17 @@
 import { gql } from "@apollo/client";
 
 export const QUERY_USERS = gql`
-  query getUsers {
+  query getUsers($first: Int!, $skip: Int!) {
+    users(first: $first, skip: $skip) {
+      id
+      firstName
+      lastName
+    }
+  }
+`;
+
+export const QUERY_USERS_NO_PAGINATION = gql`
+  query {
     users {
       id
       firstName
